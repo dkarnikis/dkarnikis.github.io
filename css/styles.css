@@ -16,7 +16,7 @@
   --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #dc3545;
-  --orange: #bd5d38;
+  --orange: #6610f2;
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #20c997;
@@ -159,7 +159,7 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: purple;
   text-decoration: none;
   background-color: transparent;
 }
@@ -547,6 +547,7 @@ pre code {
 .container-lg,
 .container-md,
 .container-sm {
+background-color: #F0F0F0;
   width: 100%;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
@@ -3956,6 +3957,7 @@ input[type=button].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  background-color: purple !important;
 }
 .navbar .container,
 .navbar .container-fluid,
@@ -9945,6 +9947,7 @@ h3 {
 
   .navbar {
     display: none;
+   background-color: purple !important;
   }
 
   .badge {
@@ -10010,7 +10013,6 @@ p.lead {
 
 .subheading {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5rem;
 }
@@ -10034,6 +10036,8 @@ p.lead {
     flex-direction: column;
     width: 17rem;
     height: 100vh;
+    /* dkarnikis purple */
+    background-color: #6237A0 !important;
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -10079,7 +10083,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: black;
 }
 
 .dev-icons {
@@ -10087,6 +10091,7 @@ p.lead {
 }
 
 section.resume-section {
+    background-color: #F0F0F0   ;
   display: flex;
   align-items: center;
   padding-left: 1rem;
