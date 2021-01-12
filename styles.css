@@ -12,12 +12,15 @@
 }
 
 #prof{
+	font-size: 20px;
+	font-weight: bold;
+}
+#addr{
 	font-size: 15px;
 	font-weight: bold;
 }
-
 #links{
-	width: 800px;
+	width: 1020px;
 	margin: auto;
 	text-align: right;
 	border-bottom: 3px solid silver;
@@ -30,13 +33,13 @@
 }
 
 #about{
-	width: 800px;
+	width: 1020px;
 	margin: 20px auto;
 	text-align: justify;
 }
 
 #about-me-tag{
-    width:800px;
+    width:1020px;
 	background-color:silver;
 	margin-bottom: 10px;
 	font-size: 20px;
@@ -50,7 +53,7 @@
 }
 
 #projects{
-	width: 800px;
+	width: 1020px;
 	margin: 30px auto;
 }
 
@@ -69,10 +72,17 @@
 
 li{
 	list-style-position: inside;
+
+}
+
+
+li h6{
+    font-size:15px;
+    font-weight:normal;
 }
 
 #publications{
-	width: 800px;
+	width: 1020px;
 	margin: 20px auto;
 }
 
@@ -113,5 +123,7 @@ li{
 	margin-left: auto;
     margin-top:-10px;
 	height: 110px;
-    width: 800px;
+    width: 1020px;
 }
+
+
