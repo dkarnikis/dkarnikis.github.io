@@ -7,8 +7,8 @@
 #name{
 	font-size: 30px;
 	font-weight: bold;
-	margin-top: -80px;
-	float:right;
+	text-align:center;
+    margin-top:-10px;
 }
 
 #prof{
@@ -21,6 +21,7 @@
 	margin: auto;
 	text-align: right;
 	border-bottom: 3px solid silver;
+    margin-bottom:15px;
 }
 
 .links{
@@ -35,6 +36,7 @@
 }
 
 #about-me-tag{
+    width:800px;
 	background-color:silver;
 	margin-bottom: 10px;
 	font-size: 20px;
@@ -92,16 +94,12 @@ li{
 	border: 5px solid #333;
 	overflow: auto
 }
-.post-thumb {
-	float: right
-}
 
 .post-thumb img {
-	display: block;
-	width:20%;
-	margin-right:auto;
+	width:95px;
 	height:auto;
-	float:left;
+    display: block;
+    float: right;
 }
 
 .post-title {
@@ -110,11 +108,10 @@ li{
 }
 
 .container {
-	width: 31%;
 	vertical-align: top;
 	margin-right: auto;
 	margin-left: auto;
-	height: 140px;
-	display: grid;
-	grid-template-rows: 80px 200px;
+    margin-top:-10px;
+	height: 110px;
+    width: 800px;
 }
