@@ -1,0 +1,120 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto Mono', monospace;
+}
+
+#name{
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: -80px;
+	float:right;
+}
+
+#prof{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#links{
+	width: 800px;
+	margin: auto;
+	text-align: right;
+	border-bottom: 3px solid silver;
+}
+
+.links{
+	margin-right: 15px;
+	text-align: right;
+}
+
+#about{
+	width: 800px;
+	margin: 20px auto;
+	text-align: justify;
+}
+
+#about-me-tag{
+	background-color:silver;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 2%;
+}
+
+#about-me-text{
+	font-size: 20px;
+	color: black;
+}
+
+#projects{
+	width: 800px;
+	margin: 30px auto;
+}
+
+#projects-tab{
+	background-color: silver;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 2%;
+}
+
+#list-container{
+	font-size: 20px;
+	text-align: justify;
+}
+
+li{
+	list-style-position: inside;
+}
+
+#publications{
+	width: 800px;
+	margin: 20px auto;
+}
+
+#publications-tag{
+	background-color:silver;
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 2%;
+}
+
+#publications-text{
+	font-size: 20px;
+	color: black;
+}
+
+.post-container {
+	margin: 10px 20px 0 0;  
+	border: 5px solid #333;
+	overflow: auto
+}
+.post-thumb {
+	float: right
+}
+
+.post-thumb img {
+	display: block;
+	width:20%;
+	margin-right:auto;
+	height:auto;
+	float:left;
+}
+
+.post-title {
+	font-weight: bold;
+	font-size: 200%
+}
+
+.container {
+	width: 31%;
+	vertical-align: top;
+	margin-right: auto;
+	margin-left: auto;
+	height: 140px;
+	display: grid;
+	grid-template-rows: 80px 200px;
+}
