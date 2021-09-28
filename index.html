@@ -1,107 +1,122 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-        </style>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div id="links">
-            <span class="links"><a href="https://www.github.com/dkarnikis">Github</span></a>
-            <span class="links"><a href="https://www.twitter.com/dkarnikis">Twitter</span></a>
-            <span class="links"><a href="CV.pdf">CV</span></a>
-        </div>
-        <div id="head">
-            <div class="container">                
-                <div class="post-thumb"><img src="profile.jpg" /></div>
-                <div id="name">
-                    Dimitrios Karnikis
-                    <div id="prof">
-                        MsC in Computer Science
-                    </div>
-                    <div id="addr">
-                        Papadiamanti 2 Heraklion, 71307, Greece <br> 
-                        (+30) 6945487051
-                        <a href="mailto:dkarnikis@gmail.com">
-                            dkarnikis@gmail.com</a>
-                    </div>
-                </div>
+   <head>
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+      </style>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div id="links">
+         <span class="links"><a href="https://www.github.com/dkarnikis">Github</span></a>
+         <span class="links"><a href="https://www.twitter.com/dkarnikis">Twitter</span></a>
+         <span class="links"><a href="CV.pdf">CV</span></a>
+      </div>
+      <div id="head">
+         <div class="container">
+            <div class="post-thumb"><img src="profile.jpg" /></div>
+            <div id="name">
+               Dimitrios Karnikis
+               <div id="prof">
+                  MsC in Computer Science
+               </div>
+               <div id="addr">
+                  Papadiamanti 2 Heraklion, 71307, Greece <br> 
+                  (+30) 6945487051
+                  <a href="mailto:dkarnikis@gmail.com">
+                  dkarnikis@gmail.com</a>
+               </div>
             </div>
-            <div id="about">
-                <div id="about-me-tag">About me</div>
-                <div id="about-me-text">I am a software engineer/consultant interested in high-impact research projects related to systems security and low-level internals of programming language runtimes. I have extended experience in TEEs (e.g. Intel SGX, Arm TrustZone) and the runtime environments of high-level programming languages such as JavaScript and Lua.</div>
+         </div>
+         <div id="about">
+            <div id="about-me-tag">About me</div>
+            <div id="about-me-text">I am a software engineer/consultant interested in high-impact research projects related to systems security and low-level internals of programming language runtimes. I have extended experience in TEEs (e.g. Intel SGX, Arm TrustZone) and the runtime environments of high-level programming languages such as JavaScript and Lua.</div>
+         </div>
+         <div id="projects">
+            <div id="projects-tab">Notable Work</div>
+            <div id="list-container">
+               <ul>
+                  <li>
+                     <b>LuaGuardia: A Confidential Computing Framework for TEEs</b> (Master Thesis)
+                     <h6>LuaGardia is a system that simplifies the development of confidential computing. LuaGardia addresses
+                        several TEE challenges such as the lack of high-level TEE abstractions, technical issues regarding runtime
+                        extensibility, management of cryptographic operations, and restricted interfaces: even porting existing
+                        applications requires manual partitioning, re-compilation, and linking steps.
+                     </h6>
+                  </li>
+                  <li>
+                     <b>Distributed Code Execution on Javascript atop of TEEs</b> (Ongoing Project)
+                     <h6> Dynamic code distribution on Intel SGX nodes that are deployed on the cloud. QuickJS is the interpreter
+                        which is ported inside the SGX enclaves, used as a drop-in Javascript replacement. Several improvements
+                        are implemented on the enclaves as well as to the QuickJS interpreter regarding faster initialization and
+                        instantiation, I/O handling and system-call validation and integrity.
+                     </h6>
+                  </li>
+                  <li>
+                     <b>Leveraging Arm TrustZone on mobile devices using Lua Language</b> (Ongoing Project)
+                     <h6>
+                        Implementation and integration of Lua interpreter on Trusty TEE, offloading and executing the critical
+                        parts of the applications inside the TEE. A wide set of applications are tested from micro-benchmarks,
+                        to cryptographic algorithms but also to larger applications such as NoSQL databases, HTTP servers
+                        and pattern matchers.
+                     </h6>
+                  </li>
+               </ul>
             </div>
-            <div id="projects">
-                <div id="projects-tab">Notable Work</div>
-                <div id="list-container">
-                    <ul>
-                        <li><b>LuaGuardia: A Confidential Computing Framework for TEEs</b> (Master Thesis)
-                            <h6>LuaGardia is a system that simplifies the development of confidential computing. LuaGardia addresses
-                                several TEE challenges such as the lack of high-level TEE abstractions, technical issues regarding runtime
-                                extensibility, management of cryptographic operations, and restricted interfaces: even porting existing
-                                applications requires manual partitioning, re-compilation, and linking steps.</h6></li>
-                        <li><b>Distributed Code Execution on Javascript atop of TEEs</b> (Ongoing Project)
-                            <h6> Dynamic code distribution on Intel SGX nodes that are deployed on the cloud. QuickJS is the interpreter
-                                which is ported inside the SGX enclaves, used as a drop-in Javascript replacement. Several improvements
-                                are implemented on the enclaves as well as to the QuickJS interpreter regarding faster initialization and
-                                instantiation, I/O handling and system-call validation and integrity.
-                            </h6>
-                        </li>
-                        <li><b>Leveraging Arm TrustZone on mobile devices using Lua Language</b> (Ongoing Project)
-                            <h6>
-                                Implementation and integration of Lua interpreter on Trusty TEE, offloading and executing the critical
-                                parts of the applications inside the TEE. A wide set of applications are tested from micro-benchmarks,
-                                to cryptographic algorithms but also to larger applications such as NoSQL databases, HTTP servers
-                                and pattern matchers.
-                            </h6>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="publications">
-                <div id="publications-tag">Publications</div>
-                <div id="publications-text">
-                 <ul>
-                    <li><b>An Enclave Assisted Snapshot-based Kernel Integrity Monitor</b>
-                        <h6>Dimitris Deyannis, <b>Dimitris Karnikis</b>, Giorgos Vasiliadis, Sotiris Ioannidis<br>
+         </div>
+         <div id="publications">
+            <div id="publications-tag">Publications</div>
+            <div id="publications-text">
+               <ul>
+                  <li>
+                     <b>3 - Andromeda: Enabling Secure Enclaves For The Android Ecosystem</b>
+                     <h6>Dimitris Deyannis, <b>Dimitris Karnikis</b>, Giorgos Vasiliadis, Sotiris Ioannidis
+                        Information Security Conference (ISC) 2021
+                     </h6>
+                  <li>
+                     <b>An Enclave Assisted Snapshot-based Kernel Integrity Monitor</b>
+                     <h6>Dimitris Deyannis, <b>Dimitris Karnikis</b>, Giorgos Vasiliadis, Sotiris Ioannidis<br>
                         EdgeSys ’20: Proceedings of the 3rd ACM International Workshop on Edge Systems, Analytics and
-                        Networking</h6>
-                    </li>
-                    <li><b>The Million Dollar Handshake: Secure and Attested Communications in the Cloud</b>
-                    <h6>Nikolaos Chalkiadakis, Dimitris Deyannis, <b>Dimitris Karnikis</b>, Giorgos Vasiliadis and Sotiris Ioannidis<br>
-                    Proceedings of the 2020 IEEE CLOUD 2020. October 2020</h6>
-                    </li>
-                    <li>
-                    <b>Andromeda: A Trusted Execution Framework for Android Based on Secure Enclaves</b>
-                    <h6><b>Dimitris Karnikis</b>, Sotiris Ioannidis<br>
-                    ACM Student Research Competition Poster Session, Parallel Architectures and Compilation Techniques<br>
-                    (PACT 2018), Cyprus 2018
-                    </h6>
-                    </li>
-                </ul>
+                        Networking
+                     </h6>
+                  </li>
+                  <li>
+                     <b>The Million Dollar Handshake: Secure and Attested Communications in the Cloud</b>
+                     <h6>Nikolaos Chalkiadakis, Dimitris Deyannis, <b>Dimitris Karnikis</b>, Giorgos Vasiliadis and Sotiris Ioannidis<br>
+                        Proceedings of the 2020 IEEE CLOUD 2020. October 2020
+                     </h6>
+                  </li>
+                  <li>
+                     <b>Andromeda: A Trusted Execution Framework for Android Based on Secure Enclaves</b>
+                     <h6><b>Dimitris Karnikis</b>, Sotiris Ioannidis<br>
+                        ACM Student Research Competition Poster Session, Parallel Architectures and Compilation Techniques<br>
+                        (PACT 2018), Cyprus 2018
+                     </h6>
+                  </li>
+               </ul>
             </div>
+         </div>
+         <div id="publications">
+            <div id="publications-tag">Contact me</div>
+            <div id="publications-text">
+               I offer my services as an engineer or a consultant on the 
+               following topics:
+               <ul>
+                  <li> Introduction to Trusted Execution Environment technologies
+                     and development on one that matches your needs
+                  </li>
+                  <li> Rapid designing and prototyping of applications based
+                     on TEEs
+                  </li>
+                  <li> Mentor and guide your team on developing/porting/integrating
+                     applications on TEEs 
+               </ul>
+               For potential collaboration or if you have any questions, feel free to contact me at
+               <a href="mailto:dkarnikis@gmail.com">
+               dkarnikis@gmail.com</a>
+               to discuss your project.
             </div>
-            <div id="publications">
-                <div id="publications-tag">Contact me</div>
-                <div id="publications-text">
-                    I offer my services as an engineer or a consultant on the 
-                    following topics:
-                    <ul>
-                        <li> Introduction to Trusted Execution Environment technologies
-                            and development on one that matches your needs</li>
-                        <li> Rapid designing and prototyping of applications based
-                            on TEEs
-                        </li>
-                        <li> Mentor and guide your team on developing/porting/integrating
-                            applications on TEEs 
-                    </ul>
-                    For potential collaboration or if you have any questions, feel free to contact me at
-                    <a href="mailto:dkarnikis@gmail.com">
-                        dkarnikis@gmail.com</a>
-                    to discuss your project.
-                </div>
-            </div>
-        </div>
-    </body>
+         </div>
+      </div>
+   </body>
 </html>
