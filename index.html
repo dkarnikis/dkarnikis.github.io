@@ -1,109 +1,106 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <style>
-         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-      </style>
-      <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-      <div id="links">
-         <span class="links"><a href="https://www.github.com/dkarnikis">Github</span></a>
-         <span class="links"><a href="CV.pdf">CV</span></a>
-      </div>
-      <div id="head">
-         <div class="container">
-            <div class="post-thumb"><img src="profile.jpg" /></div>
-            <div id="name">
-               Dimitrios Karnikis
-               <div id="prof">
-                  MsC in Computer Science
-               </div>
-               <div id="addr">
-                  Papadiamanti 2 Heraklion, 71307, Greece <br> 
-                  (+30) 6945487051
-                  <a href="mailto:dkarnikis@gmail.com">
-                  dkarnikis@gmail.com</a>
-               </div>
+    <head>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+        </style>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="links">
+            <span class="links"><a href="https://www.github.com/dkarnikis">Github</span></a>
+                <span class="links"><a href="CV.pdf">CV</span></a>
+        </div>
+        <div id="head">
+            <div class="container">
+                <!---<div class="post-thumb"><img src="profile.jpg" /></div>-->
+                <div id="name">
+                    Dimitrios Karnikis
+                    <div id="prof">
+                        MsC in Computer Science
+                    </div>
+                    <div id="addr">
+                        Papadiamanti 2 Heraklion, 71307, Greece <br> 
+                        (+30) 6945487051
+                        <a href="mailto:dkarnikis@gmail.com">
+                            dkarnikis@gmail.com</a>
+                    </div>
+                </div>
             </div>
-         </div>
-         <div id="about">
-            <div id="about-me-tag">About me</div>
-            <div id="about-me-text">I am a software engineer/consultant interested in high-impact research projects related to systems security and low-level internals of programming language runtimes. I have extended experience in TEEs (e.g. Intel SGX, Arm TrustZone) and the runtime environments of high-level programming languages such as JavaScript and Lua.</div>
-         </div>
-         <div id="projects">
-            <div id="projects-tab">Notable Work</div>
-            <div id="list-container">
-               <ul>
-                  <li>
-                     <b>LuaGuardia: A Confidential Computing Framework for TEEs</b> (Master Thesis)
-                     <h6>LuaGardia is a system that simplifies the development of confidential computing. LuaGardia addresses
-                        several TEE challenges such as the lack of high-level TEE abstractions, technical issues regarding runtime
-                        extensibility, management of cryptographic operations, and restricted interfaces: even porting existing
-                        applications requires manual partitioning, re-compilation, and linking steps.
-                     </h6>
-                  </li>
-                  <li>
-                     <b>Distributed Code Execution on Javascript atop of TEEs</b> (Ongoing Project)
-                     <h6> Dynamic code distribution on Intel SGX nodes that are deployed on the cloud. QuickJS is the interpreter
-                        which is ported inside the SGX enclaves, used as a drop-in Javascript replacement. Several improvements
-                        are implemented on the enclaves as well as to the QuickJS interpreter regarding faster initialization and
-                        instantiation, I/O handling and system-call validation and integrity.
-                     </h6>
-                  </li>
-                  <li>
-                     <b>Leveraging Arm TrustZone on mobile devices using Lua Language</b> (Ongoing Project)
-                     <h6>
-                        Implementation and integration of Lua interpreter on Trusty TEE, offloading and executing the critical
-                        parts of the applications inside the TEE. <!---A wide set of applications are tested from micro-benchmarks,
-                        to cryptographic algorithms but also to larger applications such as NoSQL databases, HTTP servers
-                        and pattern matchers.-->
-                     </h6>
-                  </li>
-               </ul>
+            <div id="about">
+                <div id="about-me-tag">About me</div>
+                <div id="about-me-text">I am a software engineer/consultant interested in high-impact 
+                    research projects related to systems security, application porting and low-level internals of programming 
+                    language runtimes. I have extended experience in TEEs (e.g. Intel SGX, Arm TrustZone) 
+                    and the runtime environments of high-level programming languages such as JavaScript and 
+                    Lua.
+                </div>
             </div>
-         </div>
-         <div id="publications">
-            <div id="publications-tag">Publications</div>
-            <div id="publications-text">
-               <ul>
-                  <li>
-                     <b>Andromeda: Enabling Secure Enclaves For The Android Ecosystem</b>
-                     <h6>Dimitris Deyannis, <b>Dimitris Karnikis</b>, Giorgos Vasiliadis, Sotiris Ioannidis<br>
-                        Information Security Conference (ISC) 2021
-                     </h6>
-                  <li>
-                     <b>An Enclave Assisted Snapshot-based Kernel Integrity Monitor</b>
-                     <h6>Dimitris Deyannis, <b>Dimitris Karnikis</b>, Giorgos Vasiliadis, Sotiris Ioannidis<br>
-                        EdgeSys ’20: Proceedings of the 3rd ACM International Workshop on Edge Systems, Analytics and
-                        Networking
-                     </h6>
-                  </li>
-                  <li>
-                     <b>The Million Dollar Handshake: Secure and Attested Communications in the Cloud</b>
-                     <h6>Nikolaos Chalkiadakis, Dimitris Deyannis, <b>Dimitris Karnikis</b>, Giorgos Vasiliadis and Sotiris Ioannidis<br>
-                        Proceedings of the 2020 IEEE CLOUD 2020. October 2020
-                     </h6>
-                  </li>
-                  <li>
-                     <b>Andromeda: A Trusted Execution Framework for Android Based on Secure Enclaves</b>
-                     <h6><b>Dimitris Karnikis</b>, Sotiris Ioannidis<br>
-                        ACM Student Research Competition Poster Session, Parallel Architectures and Compilation Techniques<br>
-                        (PACT 2018), Cyprus 2018
-                     </h6>
-                  </li>
-               </ul>
+            <div id="projects">
+                <div id="projects-tab">Notable Work</div>
+                <div id="list-container">
+                    <b><u>Distributed Code Execution on Javascript atop of TEEs</u></b>
+                    <h5> Dynamic code distribution on Intel SGX nodes deployed on the cloud. Several improvements
+                        are implemented on the enclaves as well as to the QuickJS interpreter including faster initialization, I/O handling 
+                        and battery consumption.
+                        <ul>
+                            <h5>
+                            <li> Porting of QuickJS interpreter within the Intel SGX enclave </li>
+                            <li> Porting of the tool to embedded devices and different architectures (Raspberry, Android, x86) </li>
+                            <li> Wrappers and proxies of the enclave code with the untrusted OS</li>
+                            <li> Enhanced QuickJS with cryptographic and network capabilities </li>
+                            <li> Client/Server code to setup the communication channel and offload requests using scheduling algorithms</li>
+                            </h5>
+                        </ul>
+                    </h5>
+                    <b><u> PaSh: Light-touch Data-Parallel Shell Processing (Open Source)</u></b>
+                    <h5>PaSh is a system for parallelizing POSIX shell scripts. It has been shown to achieve order-of-magnitude performance improvements on shell scripts.
+                        <ul>
+                            <h5> 
+                                <li>Automation scripts for correctness and performance tests based on Github Actions </li>
+                                <li>Rendering and evaluation infrastructure for every Github commit </li>
+                            </h5>
+                        </ul>
+                    </h5>
+                    <b><u>LuaGuardia: A Confidential Computing Framework for TEEs</u></b>
+                    <h5>LuaGardia is a system that simplifies the development of confidential computing. It addresses
+                        several TEE challenges such as the lack of high-level TEE abstractions, runtime extensibility and
+                        even porting existing Lua applications.
+                        <ul>
+                            <h5>
+                            <li> Porting of Lua interpreter within the Intel SGX enclave </li>
+                            <li> Wrappers and proxies of the enclave code with the untrusted OS</li>
+                            <li> Client/Server code to setup the communication channel and offload execution requests</li>
+                            <li> Porting of Lua interpreter within Arm TrustZone </li>
+                            </h5>
+                        </ul>
+                    </h5>
+                    <b><u> Andromeda: Enabling Secure Enclaves For The Android Ecosystem </u></b>
+                    <h5> Port of Intel SGX to Android x86 Ecosystem.
+                        <ul>
+                            <h5>
+                            <li> Ported Intel SGX framework, libraries and dependencies to AOSP x86 port</li>
+                            <li> Developed and enhanced existing Android services with enclave capabilities (Keystore, Pairing protocols)</li>
+                            </h5>
+                    </h5>
+                </div>
             </div>
-         </div>
-         <div id="publications">
-            <div id="publications-tag">Contact me</div>
-            <div id="publications-text">
-               For potential collaboration or if you have any questions, feel free to contact me at
-               <a href="mailto:dkarnikis@gmail.com">
-               dkarnikis@gmail.com</a>
-               to discuss your ideas.
+            <div id="gene">
+                <div id="gene-tag">Skills</div>
+                <div id="list-container">
+                <b>Programming Languages</b>: C, C++, Lua, JavaScript (ES6, CommonJS) <br>
+                <b>Tools</b>: Git, GDB, Latex, Bash, Unix Tools, QEMU<br>
+                <b>Operating Systems</b>: Linux, Windows, Android<br>
+                <b>Other</b>: Intel SGX, Arm TrustZone, Socket Programming<br>
+            <div id="gene">
+                <div id="gene-tag">Contact me</div>
+                <div id="gene-text">
+                    For potential collaboration or if you have any questions, feel free to contact me at
+                    <a href="mailto:dkarnikis@gmail.com">
+                        dkarnikis@gmail.com</a>
+                    to discuss your ideas.
+                </div>
             </div>
-         </div>
-      </div>
-   </body>
+        </div>
+    </body>
 </html>
