@@ -11,7 +11,7 @@
 }
 
 #prof{
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: bold;
 }
 #addr{
@@ -19,7 +19,7 @@
 	font-weight: bold;
 }
 #links{
-	width: 1020px;
+	width: 1015px;
 	margin: auto;
 	text-align: right;
 	border-bottom: 3px solid silver;
@@ -32,40 +32,40 @@
 }
 
 #about{
-	width: 1020px;
-	margin: 20px auto;
+	width: 1015px;
+	margin: 15px auto;
 	text-align: justify;
 }
 
 #about-me-tag{
-    width:1020px;
+    width:1015px;
 	background-color:silver;
 	margin-bottom: 10px;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: bold;
 	border-radius: 2%;
 }
 
 #about-me-text{
-	font-size: 20px;
+	font-size: 15px;
 	color: black;
 }
 
 #projects{
-	width: 1020px;
+	width: 1015px;
 	margin: 30px auto;
 }
 
 #projects-tab{
 	background-color: silver;
 	margin-bottom: 10px;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: bold;
 	border-radius: 2%;
 }
 
 #list-container{
-	font-size: 20px;
+	font-size: 15px;
 	text-align: justify;
 }
 
@@ -79,25 +79,25 @@ li h6{
 }
 
 #gene{
-	width: 1020px;
-	margin: 20px auto;
+	width: 1015px;
+	margin: 15px auto;
 }
 
 #gene-tag{
 	background-color:silver;
 	margin-bottom: 10px;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: bold;
 	border-radius: 2%;
 }
 
 #gene-text{
-	font-size: 20px;
+	font-size: 15px;
 	color: black;
 }
 
 .post-container {
-	margin: 10px 20px 0 0;  
+	margin: 10px 15px 0 0;  
 	border: 5px solid #333;
 	overflow: auto
 }
@@ -120,5 +120,10 @@ li h6{
 	margin-left: auto;
     margin-top:-10px;
 	height: 110px;
-    width: 1020px;
+    width: 1015px;
+}
+
+h5 {
+   font-weight: normal;
+   font-size:15px;
 }
