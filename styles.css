@@ -1,6 +1,5 @@
 *{
 	margin: 0px;
-	padding: 0px;
 	font-family: 'Roboto Mono', monospace;
 }
 
@@ -72,21 +71,19 @@
 
 li{
 	list-style-position: inside;
-
 }
-
 
 li h6{
     font-size:15px;
     font-weight:normal;
 }
 
-#publications{
+#gene{
 	width: 1020px;
 	margin: 20px auto;
 }
 
-#publications-tag{
+#gene-tag{
 	background-color:silver;
 	margin-bottom: 10px;
 	font-size: 20px;
@@ -94,7 +91,7 @@ li h6{
 	border-radius: 2%;
 }
 
-#publications-text{
+#gene-text{
 	font-size: 20px;
 	color: black;
 }
@@ -125,5 +122,3 @@ li h6{
 	height: 110px;
     width: 1020px;
 }
-
-
