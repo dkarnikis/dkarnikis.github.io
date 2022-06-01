@@ -8,6 +8,7 @@
     font-weight: bold;
     text-align:center;
     margin-top:-10px;
+    border-radius: 0.25rem;
 }
 
 #prof{
@@ -22,7 +23,7 @@
     width: 1015px;
     margin: auto;
     text-align: right;
-    border-bottom: 3px solid silver;
+    border-bottom: 3px solid lightgray;
     margin-bottom:15px;
 }
 
@@ -38,12 +39,12 @@
 }
 
 #about-me-tag{
-    width:1015px;
-    background-color:silver;
+    background-color:lightgray;
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 2%;
+    border-radius: 0.25rem;
+    padding: 0.5%;
 }
 
 #about-me-text{
@@ -57,11 +58,13 @@
 }
 
 #projects-tab{
-    background-color: silver;
+    background-color: lightgray;
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
     border-radius: 2%;
+    border-radius: 0.25rem;
+    padding: 0.5%;
 }
 
 #list-container{
@@ -84,11 +87,13 @@ li h6{
 }
 
 #gene-tag{
-    background-color:silver;
+    padding: 0.5%;
+    background-color:lightgray;
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
     border-radius: 2%;
+    border-radius: 0.25rem;
 }
 
 #gene-text{
@@ -140,7 +145,7 @@ input[type="checkbox"] {
   display: block;
   text-align: left;
   cursor: pointer;
-  #background: silver;
+  #background: lightgray;
   border-radius: 7px;
   transition: all 0.25s ease-out;
 }
@@ -181,9 +186,8 @@ input[type="checkbox"] {
 }
 
 .collapsible-content .content-inner {
-  background: white;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
+  border-radius: 0.25rem;
+  background: #f2f2f2;
   padding: 0.5rem 1rem;
 }
 
