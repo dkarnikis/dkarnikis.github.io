@@ -34,136 +34,118 @@
             <h1>Dimitrios Karnikis</h1>
             <h4><em>MsC in Computer Science</em></h4>
         </header>
-        <main>
-            <!--=====================About me================================-->
-            <section>
-                <h2>About me</h2>
-                <div class="section-content">
-                    <p>I am a software engineer interested in high-impact projects related to systems security, application porting and low-level internals of runtimes.  I have both academic and industrial experience and I have obtained extended knowledge in TEEs (Intel SGX, Arm TrustZone), CI/CD and the runtime environments of high-level programming languages such as JavaScript and Lua.</p>
-                </div>
-            </section><!--=====================Notable Work===========================-->
-            <section>
-                <h2>Notable Work</h2>
-                <div class="section-content">
-                    <ul>
-                        <div class="wrap-collabsible">
-                            <input id="collapsible" class="toggle" type="checkbox"> <label for="collapsible" class="lbl-toggle" tabindex="0">Distributed Code Execution on Javascript atop of TEEs</label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <p>Dynamic code execution on Intel SGX nodes deployed on the cloud. Several improvements are implemented including faster bootstrap, I/O and battery consumption.</p>
-                                    <ul class="notable-work-points">
-                                        <li>Porting of QuickJS interpreter within Intel SGX enclave</li>
-                                        <li>Port to embedded devices and different architectures (Raspberry, Android, x86)</li>
-                                        <li>Wrappers and proxies of the enclave code with the untrusted OS</li>
-                                        <li>Enhanced QuickJS with cryptographic and network capabilities</li>
-                                        <li>Client/Server code to establish end-to-end communication and offload requests</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrap-collabsible">
-                            <input id="collapsible1" class="toggle" type="checkbox"> <label for="collapsible1" class="lbl-toggle" tabindex="0">PaSh: Light-touch Data-Parallel Shell Processing (Open Source)</label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <p>PaSh is a system for parallelizing POSIX shell scripts. It has been shown to achieve order-of-magnitude performance improvements on shell scripts.</p>
-                                    <ul class="notable-work-points">
-                                        <li>Automation scripts for correctness and performance tests based on Github Actions</li>
-                                        <li>Rendering and evaluation infrastructure across Github commits</li>
-                                        <li>Automation scripts for building Docker images for different Linux flavors</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrap-collabsible">
-                            <input id="collapsible2" class="toggle" type="checkbox"> <label for="collapsible2" class="lbl-toggle" tabindex="0">LuaGuardia: A Confidential Computing Framework for TEEs</label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <p>System that simplifies the development of confidential computing. It solves several TEE challenges such as the lack of high-level TEE abstractions, runtime extensibility and Lua application porting.</p>
-                                    <ul class="notable-work-points">
-                                        <li>Porting of Lua5.4 interpreter within Intel SGX enclave</li>
-                                        <li>Wrappers and proxies of the enclave code with the untrusted OS</li>
-                                        <li>Client/Server code to establish end-to-end communication and offload requests</li>
-                                        <li>Porting of Lua interpreter within Arm TrustZone</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrap-collabsible">
-                            <input id="collapsible3" class="toggle" type="checkbox"> <label for="collapsible3" class="lbl-toggle" tabindex="0">Andromeda: Enabling Secure Enclaves For The Android Ecosystem</label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <p>First port of Intel SGX to Android x86 Ecosystem.</p>
-                                    <ul class="notable-work-points">
-                                        <li>Ported Intel SGX framework, libraries, modules dependencies to AOSP x86 port</li>
-                                        <li>Developed and enhanced popular Android services (Keystore, Pairing protocols) with enclave capabilities</li>
-                                        <li>Offer a Java API for facilitating the use of SGX features in Android applications</li>
-                                        <li>Offer a toolchain, fully compliant with Android and Intel SGX</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </section><!--=====================Publications============================-->
-            <section>
-                <h2>Publications</h2>
-                <div class="section-content">
-                    <!-------------------------------------------------------------------------------------------------------------------------------------------->
-                    <div class="wrap-collabsible"> <input id="collapsible4" class="toggle" type="checkbox"> <label for="collapsible4" class="lbl-toggle" tabindex="0">Security/TEE</label>
-                        <div class="collapsible-content">
-                            <div class="content-inner">
-                                <ul class="publication-items">
-                                    <li>
-                                        <a href=https://www.csd.uoc.gr/~gvasil/papers/andromeda.isc21.pdf>Andromeda: Enabling Secure Enclaves For The Android Ecosystem</a>
-                                        <h5>Dimitris Deyannis, <em>Dimitris Karnikis</em>, Giorgos Vasiliadis, Sotiris Ioannidis<br>
-                                            4th Information Security Conference (ISC 2021)</h5>
-                                    </li>
-                                    <!-------------------------------------------------------------------------------------------------------------------------------------------->
-                                    <li>
-                                        <a href=https://www.csd.uoc.gr/~gvasil/papers/teekim.pdf>An Enclave Assisted Snapshot-based Kernel Integrity Monitor</a>
-                                        <h5>Dimitris Deyannis, <em>Dimitris Karnikis</em>, Giorgos Vasiliadis, Sotiris Ioannidis<br>
-                                            Proceedings of the 3rd ACM International Workshop on Edge Systems, Analytics and Networking 2020</h5>
-                                    </li>
-                                    <!-------------------------------------------------------------------------------------------------------------------------------------------->
+        <!--=====================About me================================-->
+        <section>
+            <h2>About me</h2>
+            <div class="section-content">
+                <p>I am a software engineer interested in high-impact projects related to systems security, application porting and low-level internals of runtimes.  I have both academic and industrial experience and I have obtained extended knowledge in TEEs (Intel SGX, Arm TrustZone), CI/CD and the runtime environments of high-level programming languages such as JavaScript and Lua.</p>
+            </div>
+        </section><!--=====================Notable Work===========================-->
+        <section>
+            <h2>Notable Work</h2>
+            <div class="section-content">
+                <ul>
+                    <input id="toggle" type="checkbox"/>
+                    <label for="toggle">Distributed Code Execution on Javascript atop of TEEs</label>
+                    <div id="expand">
+                        <p>Dynamic code execution on Intel SGX nodes deployed on the cloud. Several improvements are implemented including faster bootstrap, I/O and battery consumption.</p>
+                        <ul class="notable-work-points">
+                            <li>Porting of QuickJS interpreter within Intel SGX enclave</li>
+                            <li>Port to embedded devices and different architectures (Raspberry, Android, x86)</li>
+                            <li>Wrappers and proxies of the enclave code with the untrusted OS</li>
+                            <li>Enhanced QuickJS with cryptographic and network capabilities</li>
+                            <li>Client/Server code to establish end-to-end communication and offload requests</li>
+                        </ul>
+                    </div>
+                    <input id="toggle1" type="checkbox" />
+                    <label for="toggle1">PaSh: Light-touch Data-Parallel Shell Processing (Open Source)</label>
+                    <div id="expand">
+                        <p>PaSh is a system for parallelizing POSIX shell scripts. It has been shown to achieve order-of-magnitude performance improvements on shell scripts.</p>
+                        <ul class="notable-work-points">
+                            <li>Automation scripts for correctness and performance tests based on Github Actions</li>
+                            <li>Rendering and evaluation infrastructure across Github commits</li>
+                            <li>Automation scripts for building Docker images for different Linux flavors</li>
+                        </ul>
+                    </div>
+                    <input id="toggle3" type="checkbox" />
+                    <label for="toggle3">LuaGuardia: A Confidential Computing Framework for TEEs</label>
+                    <div id="expand">
+                        <p>System that simplifies the development of confidential computing. It solves several TEE challenges such as the lack of high-level TEE abstractions, runtime extensibility and Lua application porting.</p>
+                        <ul class="notable-work-points">
+                            <li>Porting of Lua5.4 interpreter within Intel SGX enclave</li>
+                            <li>Wrappers and proxies of the enclave code with the untrusted OS</li>
+                            <li>Client/Server code to establish end-to-end communication and offload requests</li>
+                            <li>Porting of Lua interpreter within Arm TrustZone</li>
+                        </ul>
+                    </div>
+                    <input id="toggle4" type="checkbox" />
+                    <label for="toggle4">Andromeda: Enabling Secure Enclaves For The Android Ecosystem</label>
+                    <div id="expand">
+                        <p>First port of Intel SGX to Android x86 Ecosystem.</p>
+                        <ul class="notable-work-points">
+                            <li>Ported Intel SGX framework, libraries, modules dependencies to AOSP x86 port</li>
+                            <li>Developed and enhanced popular Android services (Keystore, Pairing protocols) with enclave capabilities</li>
+                            <li>Offer a Java API for facilitating the use of SGX features in Android applications</li>
+                            <li>Offer a toolchain, fully compliant with Android and Intel SGX</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </section><!--=====================Publications============================-->
+        <section>
+            <h2>Publications</h2>
+            <div class="section-content">
+                <!-------------------------------------------------------------------------------------------------------------------------------------------->
+                <input id="toggle5" type="checkbox" />
+                <label for="toggle5">Security/TEE</label>
+                <div id="expand">
+                    <ul class="publication-items">
+                        <li>
+                            <a href=https://www.csd.uoc.gr/~gvasil/papers/andromeda.isc21.pdf>Andromeda: Enabling Secure Enclaves For The Android Ecosystem</a>
+                            <h5>Dimitris Deyannis, <em>Dimitris Karnikis</em>, Giorgos Vasiliadis, Sotiris Ioannidis<br>
+                                4th Information Security Conference (ISC 2021)</h5>
+                        </li>
+                        <!-------------------------------------------------------------------------------------------------------------------------------------------->
+                        <li>
+                            <a href=https://www.csd.uoc.gr/~gvasil/papers/teekim.pdf>An Enclave Assisted Snapshot-based Kernel Integrity Monitor</a>
+                            <h5>Dimitris Deyannis, <em>Dimitris Karnikis</em>, Giorgos Vasiliadis, Sotiris Ioannidis<br>
+                                Proceedings of the 3rd ACM International Workshop on Edge Systems, Analytics and Networking 2020</h5>
+                        </li>
+                        <!-------------------------------------------------------------------------------------------------------------------------------------------->
 
-                                    <li>
-                                        <a href=https://www.csd.uoc.gr/~gvasil/papers/p2p_sgx.pdf>The million dollar handshake: secure and attested communications in the cloud</a>
-                                        <h5>Nikolaos Chalkiadakis, Dimitris Deyannis, <em>Dimitris Karnikis</em>, Giorgos Vasiliadis, Sotiris Ioannidis<br>
-                                            2020 IEEE 13th International Conference on Cloud Computing (CLOUD), 63-70</h5>
-                                    </li>
-                                    <!-------------------------------------------------------------------------------------------------------------------------------------------->
-                                    <li>
-                                        <a href=pub/pact.pdf>Andromeda: A Trusted Execution Framework for Android Based on Secure Enclaves</a>
-                                        <h5><em>Dimitris Karnikis</em>, Sotiris Ioannidis<br>
-                                            PACT '18: International conference on Parallel Architectures and Compilation Techniques,  ACM SRC Poster</h5>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-------------------------------------------------------------------------------------------------------------------------------------------->
-                    <div class="wrap-collabsible"> <input id="collapsible5" class="toggle" type="checkbox"> <label for="collapsible5" class="lbl-toggle" tabindex="0">Performance/Parallelization</label>
-                        <div class="collapsible-content">
-                            <div class="content-inner">
-                                <a href=https://mgree.github.io/papers/2022osdi_pash.pdf>Practically Correct, Just-in-Time Shell Script Parallelization</a>
-                                <h5>Konstantinos Kallas, Tammam Mustafa, Jan Bielak, <em>Dimitris Karnikis</em>, Thurston HY Dang, Michael Greenberg, Nikos Vasilakis<br>
-                                    16th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2022)</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!--=====================Skills==================================-->
-            <section>
-                <h2>Skills</h2>
-                <div class="section-content">
-                    <ul>
-                        <li><b>Programming Languages :</b> C, C++, Lua, JavaScript, Java</li>
-                        <li><b>Tools :</b> Git, Docker, Github Actions (CI/CD), Bash, Unix Tools, GDB, Latex, Qemu, Wireshark</li>
-                        <li><b>Systems :</b> Linux, Windows, Android, Embedded Devices</li>
-                        <li><b>Other :</b> Intel SGX, Arm TrustZone, Socket Programming, Concurrent Programming, Cross-Compiling, PostgreSQL</li>
+                        <li>
+                            <a href=https://www.csd.uoc.gr/~gvasil/papers/p2p_sgx.pdf>The million dollar handshake: secure and attested communications in the cloud</a>
+                            <h5>Nikolaos Chalkiadakis, Dimitris Deyannis, <em>Dimitris Karnikis</em>, Giorgos Vasiliadis, Sotiris Ioannidis<br>
+                                2020 IEEE 13th International Conference on Cloud Computing (CLOUD), 63-70</h5>
+                        </li>
+                        <!-------------------------------------------------------------------------------------------------------------------------------------------->
+                        <li>
+                            <a href=pub/pact.pdf>Andromeda: A Trusted Execution Framework for Android Based on Secure Enclaves</a>
+                            <h5><em>Dimitris Karnikis</em>, Sotiris Ioannidis<br>
+                                PACT '18: International conference on Parallel Architectures and Compilation Techniques,  ACM SRC Poster</h5>
+                        </li>
                     </ul>
                 </div>
-            </section>
-        </main>
+            </div>
+            <!-------------------------------------------------------------------------------------------------------------------------------------------->
+            <input id="toggle6" type="checkbox" />
+            <label for="toggle6">Performance/Parallelization</label>
+            <div id="expand">
+                <a href=https://mgree.github.io/papers/2022osdi_pash.pdf>Practically Correct, Just-in-Time Shell Script Parallelization</a>
+                <h5>Konstantinos Kallas, Tammam Mustafa, Jan Bielak, <em>Dimitris Karnikis</em>, Thurston HY Dang, Michael Greenberg, Nikos Vasilakis<br>
+                    16th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2022)</h5>
+            </div>
+        </section><!--=====================Skills==================================-->
+        <section>
+            <h2>Skills</h2>
+            <div class="section-content">
+                <ul>
+                    <li><b>Programming Languages :</b> C, C++, Lua, JavaScript, Java</li>
+                    <li><b>Tools :</b> Git, Docker, Github Actions (CI/CD), Bash, Unix Tools, GDB, Latex, Qemu, Wireshark</li>
+                    <li><b>Systems :</b> Linux, Windows, Android, Embedded Devices</li>
+                    <li><b>Other :</b> Intel SGX, Arm TrustZone, Socket Programming, Concurrent Programming, Cross-Compiling, PostgreSQL</li>
+                </ul>
+            </div>
+        </section>
     </body>
 </html>
