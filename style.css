@@ -1,0 +1,217 @@
+/* GLOBAL STYLES AND SIMPLE RESET */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+/* List element styles */
+li {
+    list-style: none;
+}
+
+/* controls the svg's */
+img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Whole page layout */
+body {
+    margin: auto;
+    max-width: 1015px;
+    padding-left: 50px;
+    padding-right: 50px;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Navigation bar on top */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid silver;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Unordered list item in top nav bar */
+nav > ul {
+    display: flex;
+    gap: 30px;
+}
+
+/* Make the icons and text in top nav bar alligned and pretty*/
+nav > ul > li > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Holds your information beneath the nav bar */
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Section title */
+section > h2 {
+    height: 26px;
+    background-color: silver;
+    padding: 5px 0px 5px 5px;
+    border-radius: 0.25rem;
+}
+
+/* Holds the content of the sections */
+.section-content {
+    text-align: justify;
+    line-height: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section-content > ul  {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.clickable-toogle-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.clickable-toogle-dropdown:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.hidden-dropdown {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.notable-work-points {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.notable-work-points > li{
+    list-style:disc;
+    margin-left: 70px;
+}
+
+.publications-items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.publications-items > li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .notable-work-points > li{
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.wrap-collabsible {
+    padding: 1px;
+}
+
+.lbl-toggle {
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    #background: lightgray;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+    color: black;
+}
+
+.lbl-toggle::before {
+    content: " ";
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: 0.7rem;
+    transform: translateY(-2px);
+    transition: transform 0.2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 350px;
+}
+
+.toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+    border-radius: 0.25rem;
+    background: #f2f2f2;
+    padding: 0.5rem 1rem;
+}
+
+.collapsible-content p {
+    margin-bottom: 0;
+}
