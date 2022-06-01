@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dimitris Karnikis</title>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+        </style>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="links">
+            <span class="links"><a href="https://www.linkedin.com/in/dimitris-karnikis-174a01231">LinkedIn</span></a>
+                <span class="links"><a href="https://www.github.com/dkarnikis">Github</span></a>
+                    <span class="links"><a href="CV.pdf">CV</span></a>
+        </div>
+        <div id="head">
+            <div class="container">
+                <!---<div class="post-thumb"><img src="profile.jpg" /></div>-->
+                <div id="name">
+                    Dimitrios Karnikis
+                    <div id="prof">
+                        MsC in Computer Science
+                    </div>
+                    <div id="addr">
+                        Contact me at
+                        <a href="mailto:dkarnikis@gmail.com">
+                            dkarnikis@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div id="about">
+                <div id="about-me-tag">About me</div>
+                <div id="about-me-text">I am a software engineer interested in high-impact 
+                    projects related to systems security, application porting and low-level internals of programming 
+                    language runtimes. I have extended experience in TEEs (e.g. Intel SGX, Arm TrustZone) 
+                    and the runtime environments of high-level programming languages such as JavaScript and 
+                    Lua.
+                </div>
+            </div>
+            <div id="projects">
+                <div id="projects-tab">Notable Work</div>
+                <div id="list-container">
+                    <button type="button" class="collapsible">
+                        <li> Distributed Code Execution on Javascript atop of TEEs
+                    </button>
+                    <div class="content">
+                        <h5> Dynamic code execution on Intel SGX nodes deployed on the cloud. Several improvements
+                            are implemented including faster bootstrap, I/O and battery consumption.
+                            <ul>
+                                <h5>
+                                    <li> Porting of QuickJS interpreter within Intel SGX enclave </li>
+                                    <li> Port to embedded devices and different architectures (Raspberry, Android, x86) </li>
+                                    <!--<li> Wrappers and proxies of the enclave code with the untrusted OS</li>-->
+                                    <li> Enhanced QuickJS with cryptographic and network capabilities </li>
+                                    <li> Client/Server code to establish end-to-end communication and offload requests</li>
+                                </h5>
+                            </ul>
+                        </h5>
+                    </div>
+                    <button type="button" class="collapsible">
+                        <li>        PaSh: Light-touch Data-Parallel Shell Processing (Open Source)
+                    </button>
+                    <div class="content">
+                        <h5>PaSh is a system for parallelizing POSIX shell scripts. It has been shown to achieve order-of-magnitude performance improvements on shell scripts.
+                            <ul>
+                                <h5> 
+                                    <li>Automation scripts for correctness and performance tests based on Github Actions </li>
+                                    <li>Rendering and evaluation infrastructure across Github commits </li>
+                                </h5>
+                            </ul>
+                        </h5>
+                    </div>
+                    <button type="button" class="collapsible">
+                        <li>   LuaGuardia: A Confidential Computing Framework for TEEs
+                    </button>
+                    <div class="content">
+                        <h5> System that simplifies the development of confidential computing. It solves
+                            several TEE challenges such as the lack of high-level TEE abstractions, runtime extensibility and
+                            Lua application porting.
+                            <ul>
+                                <h5>
+                                    <li> Porting of Lua5.4 interpreter within Intel SGX enclave </li>
+                                    <li> Wrappers and proxies of the enclave code with the untrusted OS</li>
+                                    <li> Client/Server code to establish end-to-end communication and offload requests</li>
+                                    <li> Porting of Lua interpreter within Arm TrustZone </li>
+                                </h5>
+                            </ul>
+                        </h5>
+                    </div>
+                    <button type="button" class="collapsible">
+                        <li>    Andromeda: Enabling Secure Enclaves For The Android Ecosystem 
+                    </button>
+                    <div class="content">
+                        <h5> First port of Intel SGX to Android x86 Ecosystem.
+                            <ul>
+                                <h5>
+                                    <li> Ported Intel SGX framework, libraries, modules dependencies to AOSP x86 port</li>
+                                    <li> Developed and enhanced popular Android services (Keystore, Pairing protocols) with enclave capabilities</li>
+                                </h5>
+                            </ul>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                            coll[i].addEventListener("click", function() {
+                                            this.classList.toggle("active");
+                                            var content = this.nextElementSibling;
+                                            if (content.style.display === "block") {
+                                                            content.style.display = "none";
+                                                        } else {
+                                                                        content.style.display = "block";
+                                                                    }
+                                        });
+                        }
+        </script>
+    </body>
+</html>

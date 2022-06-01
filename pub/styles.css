@@ -128,65 +128,41 @@ h5 {
     font-size:15px;
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
-.wrap-collabsible {
-  padding: 1px;
-}
-
-.lbl-toggle {
-  display: block;
-  text-align: left;
+.collapsible {
+  background-color: white;
   cursor: pointer;
-  #background: silver;
-  border-radius: 7px;
-  transition: all 0.25s ease-out;
+  padding: 4px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
 }
 
-.lbl-toggle:hover {
-  color: black;
+.active, .collapsible:hover {
+  background-color: silver;
 }
 
-.lbl-toggle::before {
-  content: " ";
-  display: inline-block;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid currentColor;
-  vertical-align: middle;
-  margin-right: 0.7rem;
-  transform: translateY(-2px);
-  transition: transform 0.2s ease-out;
-}
-
-.toggle:checked + .lbl-toggle::before {
-  transform: rotate(90deg) translateX(-3px);
-}
-
-.collapsible-content {
-  max-height: 0px;
+.content {
+  padding: 0 18px;
+  display: none;
   overflow: hidden;
-  transition: max-height 0.25s ease-in-out;
+  background-color: white;
 }
 
-.toggle:checked + .lbl-toggle + .collapsible-content {
-  max-height: 350px;
+ul {
+  list-style-type: none
 }
 
-.toggle:checked + .lbl-toggle {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+ul li {
+  display: grid;
+  grid-template-columns: 20px auto;
+  justify-content: start;
+  align-items: center;
 }
 
-.collapsible-content .content-inner {
-  background: white;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  padding: 0.5rem 1rem;
+ul li::before {
+  content: ">";
+  font-size: 10px;
+  color: #999;
 }
-
-.collapsible-content p {
-  margin-bottom: 0;
-
