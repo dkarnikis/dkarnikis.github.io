@@ -89,7 +89,7 @@ section > h2 {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    width:99.6%;
+    width:99.1%;
 }
 
 .hidden-dropdown {
@@ -155,22 +155,51 @@ section > h2 {
         width: 45%;
     }
 
-    .notable-work-points > li{
-        margin-top: 0px;
-        margin-left: 30px;
-        margin-right: 30px;
+
+    .section-content > ul  {
+        font-size:15px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width:97.2%;
     }
+
+    label {
+        font-size:15px;
+        font-weight:bold;
+        display: inline-block;
+        text-align: left;
+        cursor: pointer;
+        border-radius: 7px;
+        padding-right:5px;
+        padding-left:2px;
+    }
+    #expand {
+        font-size:10px;
+        width: 0px;
+        overflow: hidden;
+        background-color:lightgray;
+
+        max-height: 0px;
+        padding-left:5px;
+        padding-right:5px;
+        color:black;
+        border-radius: 7px;
+    }
+
+
 }
 
 /* collapse content */
 
 #expand {
-    max-height: 0px;
     width: 0px;
     overflow: hidden;
     background-color:lightgray;
-    transition: max-height 0.5s, width 0.5s ease-in-out;
+
+    max-height: 0px;
     padding-left:5px;
+    padding-right:5px;
     color:black;
     border-radius: 7px;
 }
@@ -186,7 +215,6 @@ input:checked+label+#expand {
     background-color:lightgray;
     color:black;
     border-radius: 7px;
-
 }
 
 [id^="toggle"]:checked + label::before {
