@@ -66,8 +66,8 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 28px;
+    padding-bottom: 0px;
 }
 
 /* Section title */
@@ -179,6 +179,16 @@ section > h2 {
         padding-right:5px;
         color:black;
         border-radius: 7px;
+    }
+
+    header {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
