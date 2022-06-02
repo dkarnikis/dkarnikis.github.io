@@ -126,11 +126,6 @@ section > h2 {
 }
 
 @media screen and (max-width: 600px) {
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: 'Roboto Mono', monospace;
-    }
     nav {
         display: flex;
         flex-wrap: wrap;
@@ -154,7 +149,6 @@ section > h2 {
     nav > ul > li  {
         width: 45%;
     }
-
 
     .section-content > ul  {
         font-size:15px;
@@ -186,8 +180,6 @@ section > h2 {
         color:black;
         border-radius: 7px;
     }
-
-
 }
 
 /* collapse content */
@@ -200,8 +192,8 @@ section > h2 {
     max-height: 0px;
     padding-left:5px;
     padding-right:5px;
-    color:black;
     border-radius: 7px;
+    #transition: max-height 0.5s, width 0.5s ease-in-out;
 }
 
 input {
@@ -242,6 +234,4 @@ label::before {
     border-left: 5px solid currentColor;
     vertical-align: middle;
     margin-right: 0.7rem;
-    transform: translateY(-2px);
-    transition: transform 0.2s ease-out;
 }
