@@ -131,18 +131,17 @@ section > h2 {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-
     }
 
     /* Unordered list item in top nav bar */
     nav > ul {
-        align-items: center;
-        justify-content: center;
-        text-align:center;
         max-width:100%;
         display: flex;
         gap:0px;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align:center;
         align-content: space-between;
     }
 
@@ -155,7 +154,7 @@ section > h2 {
         display: flex;
         flex-direction: column;
         gap: 4px;
-        width:97.2%;
+        width:97.1%;
     }
 
     label {
@@ -168,6 +167,7 @@ section > h2 {
         padding-right:5px;
         padding-left:2px;
     }
+
     #expand {
         font-size:10px;
         width: 0px;
