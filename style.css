@@ -101,7 +101,6 @@ section > h2 {
 }
 
 .notable-work-points {
-    padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -109,7 +108,7 @@ section > h2 {
 
 .notable-work-points > li{
     list-style:disc;
-    margin-left: 70px;
+    margin-left: 50px;
 }
 
 .publications-items{
