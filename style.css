@@ -85,7 +85,7 @@ section > h2 {
 
 /* Holds the content of the sections */
 .section-content {
-    font-size: 15px;
+    font-size: 14px;
     text-align: justify;
     line-height: 25px;
     padding-top: 10px;
@@ -163,7 +163,6 @@ section > h2 {
     }
 
     label {
-        font-weight:bold;
         display: inline-block;
         text-align: left;
         cursor: pointer;
@@ -224,7 +223,6 @@ input:checked+label+#expand {
 }
 
 label {
-    font-weight:bold;
     display: inline-block;
     text-align: left;
     cursor: pointer;
